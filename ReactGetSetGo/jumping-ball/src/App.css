@@ -1,0 +1,92 @@
+/* --- Jumping Ball (commented out) --- */
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.centered-ball{
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: red;
+  transition: transform 0.3s ease;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background: black;
+}
+
+.btn-wrapper {
+  margin-top: 20px;
+  >button {
+    padding:5px 15px;
+    margin: 2px 10px;
+    cursor: pointer;
+  }
+}
+
+
+.jump {
+  animation: jumpAnim 0.5s ease;
+}
+
+@keyframes jumpAnim {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-120px); }
+  100% { transform: translateY(0); }
+} */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: #f1f5f9;
+}
+
+.app-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1e293b;
+}
+
+.demo-input {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+}
+
+.demo-review {
+  list-style: none;
+  padding: 0;
+}
+
+.demo-review li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.demo-success {
+  font-size: 1.25rem;
+  color: #16a34a;
+  margin-bottom: 1rem;
+}
+
+.demo-reset {
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  cursor: pointer;
+}

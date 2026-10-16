@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "name": "Veg Burger",
+      "price": 120,
+      "availableQuantity": 10,
+      "image": "https://via.placeholder.com/150",
+      "category": "Fast Food"
+    },
+    {
+      "id": 2,
+      "name": "Margherita Pizza",
+      "price": 250,
+      "availableQuantity": 8,
+      "image": "https://via.placeholder.com/150",
+      "category": "Pizza"
+    },
+    {
+      "id": 3,
+      "name": "Pasta Alfredo",
+      "price": 200,
+      "availableQuantity": 5,
+      "image": "https://via.placeholder.com/150",
+      "category": "Italian"
+    },
+    {
+      "id": 4,
+      "name": "Paneer Roll",
+      "price": 150,
+      "availableQuantity": 12,
+      "image": "https://via.placeholder.com/150",
+      "category": "Street Food"
+    },
+    {
+      "id": 5,
+      "name": "Masala Dosa",
+      "price": 100,
+      "availableQuantity": 15,
+      "image": "https://via.placeholder.com/150",
+      "category": "South Indian"
+    },
+    {
+      "id": 6,
+      "name": "Veg Biryani",
+      "price": 180,
+      "availableQuantity": 7,
+      "image": "https://via.placeholder.com/150",
+      "category": "Indian"
+    },
+    {
+      "id": 7,
+      "name": "Cold Coffee",
+      "price": 90,
+      "availableQuantity": 20,
+      "image": "https://via.placeholder.com/150",
+      "category": "Beverages"
+    },
+    {
+      "id": 8,
+      "name": "Chocolate Cake",
+      "price": 300,
+      "availableQuantity": 4,
+      "image": "https://via.placeholder.com/150",
+      "category": "Dessert"
+    }
+  ]

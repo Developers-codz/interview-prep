@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      position: relative;
+      width: 1100px;
+    }
+    .background {
+      width: 100%;
+      display: block;
+    }
+    .clock {
+      position: absolute;
+      top: 90px;   /* adjust to match clock position in your PNG */
+      left: 280px; /* adjust to match */
+      width: 150px;
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Your background image -->
+    <img src="image.png" class="background"/>
+
+    <!-- Live clock SVG -->
+    <svg class="clock" viewBox="0 0 200 200">
+      <!-- Clock face -->
+      <circle cx="100" cy="100" r="95" stroke="#55628b" stroke-width="10" fill="#55628b"/>
+      <circle cx="100" cy="100" r="92" stroke="white" stroke-width="3" fill="white"/>
+      <circle cx="100" cy="100" r="88" stroke="#55628b" stroke-width="3" fill="#55628b"/>
+
+   
+  
+    <line x1="100" y1="12"  x2="100" y2="22"  stroke="white" stroke-width="1.5" stroke-linecap="round"/> <!-- 12 -->
+    <line x1="188" y1="100" x2="178" y2="100" stroke="white" stroke-width="1.5" stroke-linecap="round"/> <!-- 3 -->
+    <line x1="100" y1="188" x2="100" y2="178" stroke="white" stroke-width="1.5" stroke-linecap="round"/> <!-- 6 -->
+    <line x1="12"  y1="100" x2="22"  y2="100" stroke="white" stroke-width="1.5" stroke-linecap="round"/> <!-- 9 -->
+
+
+      <!-- Hands -->
+      <line id="hour"   x1="100" y1="100" x2="100" y2="55" stroke="white" stroke-width="6" stroke-linecap="round"/>
+      <line id="minute" x1="100" y1="100" x2="100" y2="35" stroke="white" stroke-width="4" stroke-linecap="round"/>
+      <line id="second" x1="100" y1="100" x2="100" y2="25" stroke="white" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Center dot -->
+      <circle cx="100" cy="100" r="5" fill="white"/>
+    </svg>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const seconds = now.getSeconds();
+      const minutes = now.getMinutes();
+      const hours   = now.getHours();
+
+      const secondAngle = seconds * 6;
+      const minuteAngle = minutes * 6 + seconds * 0.1;
+      const hourAngle   = hours * 30 + minutes * 0.5;
+
+      document.getElementById("second").setAttribute("transform", `rotate(${secondAngle}, 100, 100)`);
+      document.getElementById("minute").setAttribute("transform", `rotate(${minuteAngle}, 100, 100)`);
+      document.getElementById("hour").setAttribute("transform", `rotate(${hourAngle}, 100, 100)`);
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+</html>
